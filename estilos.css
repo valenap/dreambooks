@@ -1,0 +1,310 @@
+header {
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(110, 109, 109, 0.2);
+    padding-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: "Noto Sans";
+    font-style: normal;
+}
+
+/*.container-logo {
+
+}*/
+
+.nombre-empresa {
+    font-family: "Noto Sans";
+    font-size: 2.5em;
+    padding:12px 0px 0px 12px;
+}
+
+.nombre-empresa a {
+    color: #000000;
+}
+
+.nombre-empresa a:hover{
+    text-decoration: none;
+}
+
+.subtitulo-empresa {
+    font-family: "Noto Sans";
+    font-size: 1em;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    padding: 12px 12px 0px 0px;
+}
+
+nav ul li {
+    margin-right: 1em;
+    list-style: none;
+    font-family: "Noto Sans";
+    font-size: 20px;
+}
+ 
+.tabs-underlined {
+    display: flex;
+    align-items: center;
+}
+ 
+.tabs-underlined .tab-underlined {
+    color: black;
+    padding: 8px;
+    margin: 8px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+}
+
+.tabs-underlined .tab-underlined:hover {
+    border-bottom: 3px solid #555555;
+}
+
+main {
+    background-color: #cdeac0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.producto {
+    background: #FFFFFF;
+    border: 3px solid rgba(148, 140, 140, 0.54);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 22px;
+}
+
+.producto .foto img {
+    width: 300px;
+    height: 250px;
+}
+
+h1 {
+font-weight: 500;
+font-size: 2.0em;
+line-height: 75px;
+display: flex;
+align-items: center;
+padding:12px 0px 0px 12px;
+}
+
+#secciones {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.seccion{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 28px 12px 16px 12px;
+    margin: 10px;
+    height: 310px;
+}
+
+.seccion .titulo-seccion {
+    position: relative;
+    top: -300px;
+    color: white;
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 48px;
+}
+
+.seccion img {
+    width: 427px;
+    height: 310px;
+}
+
+.carousel-img {
+    width: 600px;
+    height: 400px;
+}
+
+
+.card-category {
+    background-size: cover;
+    background-position: center;
+    height: 310px;
+    width: 427px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin: 10px;
+    
+}
+
+.card-category h2 {
+    transition: transform 0.3s ease-in-out 0s;
+}
+
+.card-category:hover h2 {
+    transform: scale(1.3);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.cards a {
+    color: #000000;
+}
+
+.cards a:hover{
+    text-decoration: none;
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+.cards {
+    grid-template-columns: 1fr;
+    }
+}
+  
+
+@media (min-width: 576px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+}
+  
+
+@media (min-width: 768px) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+  
+
+@media (min-width: 992px) {
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+  
+
+@media (min-width: 1200px) {
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.card-trip {
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin: 10px;
+}
+  
+.card-trip > img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+  
+.card-trip h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+  
+.card-trip p {
+    font-size: 12px;
+    opacity: .7;
+    margin: 0;
+}
+  
+  
+.card-trip .card-trip-infos {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+  
+.card-trip-infos .card-trip-user {
+    position: absolute;
+    right: 16px;
+    top: -20px;
+    width: 40px;
+}
+  
+
+
+
+
+
+.footer {
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0px 50px;
+    color: rgba(0,0,0,0.3);
+}
+  
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+    transition: transform 0.3s ease-in-out 0s;
+
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.footer .fa-heart {
+    color: #D23333;
+}
+
