@@ -54,12 +54,12 @@ nav ul li {
     font-family: "Noto Sans";
     font-size: 20px;
 }
- 
+
 .tabs-underlined {
     display: flex;
     align-items: center;
 }
- 
+
 .tabs-underlined .tab-underlined {
     color: black;
     padding: 8px;
@@ -108,12 +108,12 @@ footer {
 }
 
 h1 {
-font-weight: 500;
-font-size: 2.0em;
-line-height: 75px;
-display: flex;
-align-items: center;
-padding:12px 0px 0px 12px;
+    font-weight: 500;
+    font-size: 2.0em;
+    line-height: 75px;
+    display: flex;
+    align-items: center;
+    padding:12px 0px 0px 12px;
 }
 
 #secciones {
@@ -168,7 +168,7 @@ padding:12px 0px 0px 12px;
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     margin: 10px;
-    
+
 }
 
 .card-category h2 {
@@ -195,36 +195,36 @@ padding:12px 0px 0px 12px;
 }
 
 @media (min-width: 100px) and (max-width: 575px) {
-.cards {
-    grid-template-columns: 1fr;
+    .cards {
+        grid-template-columns: 1fr;
     }
 }
-  
+
 
 @media (min-width: 576px) {
     .cards {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 }
-  
+
 
 @media (min-width: 768px) {
     .cards {
-      grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
-  
+
 
 @media (min-width: 992px) {
     .cards {
-      grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
-  
+
 
 @media (min-width: 1200px) {
     .cards {
-      grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -234,26 +234,26 @@ padding:12px 0px 0px 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     margin: 10px;
 }
-  
+
 .card-trip > img {
     width: 300px;
     height: 250px;
     object-fit: cover;
 }
-  
+
 .card-trip h2 {
     font-size: 16px;
     font-weight: bold;
     margin: 0;
 }
-  
+
 .card-trip p {
     font-size: 12px;
     opacity: .7;
     margin: 0;
 }
-  
-  
+
+
 .card-trip .card-trip-infos {
     padding: 16px;
     display: flex;
@@ -261,14 +261,13 @@ padding:12px 0px 0px 12px;
     align-items: flex-end;
     position: relative;
 }
-  
+
 .card-trip-infos .card-trip-user {
     position: absolute;
     right: 16px;
     top: -20px;
     width: 40px;
 }
-  
 
 
 
@@ -283,7 +282,7 @@ padding:12px 0px 0px 12px;
     padding: 0px 50px;
     color: rgba(0,0,0,0.3);
 }
-  
+
 .footer-links {
     display: flex;
     align-items: center;
