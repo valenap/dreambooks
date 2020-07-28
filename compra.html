@@ -1,106 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <title>DreamBooks | Compra</title>
-    <meta charset="utf-8">
-    <meta name="keywords" content="cuadernos artesanales, artesanías, agendas, diarios, viajes, diarios viajeros">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-    <link rel="stylesheet" href="estilos.css">
-</head>
+    <head>
+        <title>DreamBooks | Cuadernos Artesanales</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="cuadernos artesanales, artesanías, agendas, diarios, viajes, diarios viajeros">
+        <link rel="icon" href="imagenes/favicon-libro.gif">
+        <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Noto+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+        <link rel="stylesheet" href="estilos.css">
+    </head>
 
-<body>
+    <body>
+        <header>
+            <div class="container-logo">
+                <div class="nombre-empresa">
+                    <a href="index.html">
+                        <img src="imagenes/logotipo.png" style=" width: 200px;"alt="">
+                    </a>
+                </div>
+            </div>
 
-<header>
-    <div class="container-logo">
-        <div class="nombre-empresa">
-            <a href="index.html">
-                DreamBooks
-            </a>
+            <nav>
+                <ul class="list-inline tabs-underlined">
+                    <li>
+                        <a href="secciones.html" class="tab-underlined">Productos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab-underlined">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab-underlined">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <section>
+
+                <div class="row">
+
+                    <div class="col-sm-12 col-lg-6">
+                        <img src="imagenes/cuaderno-1.jpg" style="width: 400px; margin: 40px">
+                    </div>
+
+                    <div class="col-sm-12 col-md-6">
+                        <h1 class="product_title entry-title">Diseño Ejecutivo</h1>
+                            <ul>
+                                <li>MEDIDAS 21 X 15. TAMAÑO A5</li>
+                                <li>HOJA BOOKCEL. COLOR BLANCO</li>
+                                <li>AGENDA VISTA SEMANAL</li>
+                                <li>SEPARADOR MENSUAL</li>
+                                <li>ELABORADAS 100% A MANO</li>
+                            </ul>
+
+                    <div class="col-8">
+                            <h4>Compartir este producto</h4>
+
+                        <div class="footer-links">
+
+                            <a class="footer-links" href="#" target="_blank">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+
+                            <a class="footer-links" href="#" target="_blank">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+
+                            <a class="footer-links" href="#" target="_blank">
+                                <i class="fab fa-pinterest-square"></i>
+                            </a>
+
+                            <a class="footer-links" href="#" target="_blank">
+                                <i class="fas fa-envelope-square"></i>
+                            </a>
+                        </div><br>
+
+                        <button id="btnComprar" type="button" onclick="mostrar()" class="btn-compra" >Comprar</button>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <div class="col-sm-12 col-md-6" style="margin-right: auto; margin-top: 10px; margin-bottom: 40px; display: none;" id="form-compra">
+                <form>
+
+                    <div class="form-group">
+
+                        <label>Nombre</label>
+                        <input type="text" id="defaultContactFormName" class="form-control mb-4">
+
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="on" required>
+                        <small id="emailHelp" class="form-text text-muted">No compartiremos su mail con nadie.</small>
+                        <br>
+
+                        <div>
+                            <label for="inputCity">Dirección</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <br>
+
+                        <select class="browser-default custom-select mb-4" required>
+                            <option value="" disabled>Escoje uno</option>
+                            <option value="1">Medio de pago</option>
+                            <option value="2">Mercado Pago</option>
+                            <option value="3">PayPal</option>
+                            <option value="4">Débito</option>
+                            <option value="5">Crédito</option>
+                        </select>
+                        <br>
+
+                        <div class="form-group">
+                            <label>Producto/s que desea comprar</label>
+                            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
+                        </div>
+
+                    </div>
+                    <button class="btn-compra">Enviar</button>
+                </form>
+            </div>
         </div>
-        <div class="subtitulo-empresa">
-            Cuadernos Artesanales
-        </div>
-    </div>
 
-    <nav>
-        <ul class="list-inline tabs-underlined">
-            <li>
-                <a href="secciones.html" class="tab-underlined">Productos</a>
-            </li>
-            <li>
-                <a href="#" class="tab-underlined">Contacto</a>
-            </li>
-            <li>
-                <a href="#" class="tab-underlined">Nosotros</a>
-            </li>
-        </ul>
-    </nav>
-</header>
 
-<body>
+        <footer>
 
-<section>
-    <div>
-        <img src="imagenes/cuaderno-1.jpg">
-    </div>
+            <div class="footer">
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    Hecho con <i class="fas fa-heart"></i> por Valentina Andrada Perino
+                </div>
+            </div>
+        </footer>
 
-    <div class="summary entry-summary">
-        <h1 class="product_title entry-title">Diseño Ejecutivo</h1>
-            <ul>
-                <li>MEDIDAS 21 X 15. TAMAÑO A5</li>
-                <li>HOJA BOOKCEL. COLOR BLANCO</li>
-                <li>AGENDA VISTA SEMANAL</li>
-                <li>SEPARADOR MENSUAL</li>
-                <li>ELABORADAS 100% A MANO</li>
-            </ul>
-    </div>
+        <script type="text/javascript">
+            function mostrar(){
+                const accion = document.getElementById('btnComprar').innerText;
+                if(accion === 'Comprar'){
+                    document.getElementById('form-compra').style.display = 'block';
+                    document.getElementById('btnComprar').innerText = 'Cancelar';
+                }
+                else {
+                    document.getElementById('form-compra').style.display = 'none';
+                    document.getElementById('btnComprar').innerText = 'Comprar';
+                }
+            }
 
-    <div class="share-post  share-post-icons">
-        <h4>Compartir este producto</h4>
 
-        <div class="footer-links">
-
-            <a class="footer-links" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Flolitacuadernos.com.ar%2Fproducto%2Fagenda-2019-anillada-vista-semanal%2F" target="_blank">
-                <i class="fab fa-facebook-square"></i>
-            </a>
-
-            <a class="footer-links" href="https://twitter.com/share?text=Agenda+2019+%28encargala+desde+el+mes+en+el+que+estemos%29&amp;url=https%3A%2F%2Flolitacuadernos.com.ar%2Fproducto%2Fagenda-2019-anillada-vista-semanal%2F" target="_blank">
-                <i class="fab fa-twitter-square"></i>
-            </a>
-
-            <a class="footer-links" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Flolitacuadernos.com.ar%2Fproducto%2Fagenda-2019-anillada-vista-semanal%2F&amp;description=Agenda+2019+%28encargala+desde+el+mes+en+el+que+estemos%29&amp;media=https://lolitacuadernos.com.ar/wp-content/uploads/2017/12/ANILLADAS-2018-AGENDAS-ARTESANALES.jpg" target="_blank">
-                <i class="fab fa-pinterest-square"></i>
-            </a>
-
-            <a class="footer-links" href="mailto:?subject=Agenda%202019%20%28encargala%20desde%20el%20mes%20en%20el%20que%20estemos%29&amp;body=https://lolitacuadernos.com.ar/producto/agenda-2019-anillada-vista-semanal/" target="_blank">
-                <i class="fas fa-envelope-square"></i>
-            </a>
-        </div>
-    </div>
-    </div>
-</section>
-
-</body>
-
-<footer>
-
-    <div class="footer">
-        <div class="footer-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="footer-copyright">
-            Alto footer wachin <i class="fas fa-heart"></i> Hecho por Valen Alias "LA MEJOR"
-        </div>
-    </div>
-
-</footer>
-
+        </script>
+    </body>
 </html>

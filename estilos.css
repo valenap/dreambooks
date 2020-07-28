@@ -8,7 +8,7 @@ header {
 body {
     margin: 0;
     background-color: #fff;
-    font-family: "Noto Sans";
+    font-family: 'Gabriela', serif;
     font-style: normal;
 }
 
@@ -51,7 +51,6 @@ nav ul {
 nav ul li {
     margin-right: 1em;
     list-style: none;
-    font-family: "Noto Sans";
     font-size: 20px;
 }
 
@@ -77,12 +76,6 @@ main {
     background-color: #cdeac0;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-footer {
-    background-color: #fff;
-    height: 100px;
-    width: 100%;
 }
 
 #productos {
@@ -147,11 +140,22 @@ h1 {
     height: 310px;
 }
 
+hr {
+    height: 1px solid rgba(110, 109, 109, 0.2);
+    width: 50%;
+}
+
+#agendas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
 .carousel-img {
     width: 600px;
     height: 400px;
 }
-
 
 .card-category {
     background-size: cover;
@@ -253,13 +257,17 @@ h1 {
     margin: 0;
 }
 
-
 .card-trip .card-trip-infos {
     padding: 16px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
+    color: black;
+}
+
+.card-trip a:hover{
+    text-decoration: none;
 }
 
 .card-trip-infos .card-trip-user {
@@ -269,18 +277,42 @@ h1 {
     width: 40px;
 }
 
+::selection {
+     background: #00C9D8;
+ }
 
+.btn-compra {
+    border-style: solid;
+    padding: 6px 12px 6px 12px;
+    background: #00C9D8;
+    border-color: #00C9D8;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
 
+.btn-compra:hover{
+    background: #FFFFFF;
+    border-color: #00C9D8;
+    color: #00C9D8;
+}
 
+footer {
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+}
 
 .footer {
-    background: #F4F4F4;
+    background: #00C9D8;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
     padding: 0px 50px;
     color: rgba(0,0,0,0.3);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-links {
@@ -295,7 +327,6 @@ h1 {
     font-size: 24px;
     padding: 0px 10px;
     transition: transform 0.3s ease-in-out 0s;
-
 }
 
 .footer-links a:hover {
