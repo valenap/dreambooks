@@ -152,6 +152,20 @@ hr {
     justify-content: center;
 }
 
+#viajes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+#arte {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
 .carousel-img {
     width: 600px;
     height: 400px;
@@ -172,7 +186,6 @@ hr {
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     margin: 10px;
-
 }
 
 .card-category h2 {
@@ -237,6 +250,15 @@ hr {
     background: white;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     margin: 10px;
+    transition: 0.5s all;
+}
+
+.card-trip:hover {
+    transition: 0.5s all;
+    transform: translateY(-10px);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.50);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .card-trip > img {
@@ -293,6 +315,27 @@ hr {
 .btn-compra:hover{
     background: #FFFFFF;
     border-color: #00C9D8;
+    color: #00C9D8;
+}
+
+#contacto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.email-contacto {
+    color: black;
+}
+
+.email-contacto a{
+    text-decoration: none;
+    color: black;
+}
+
+.email-contacto:hover {
+    text-decoration: none;
     color: #00C9D8;
 }
 
