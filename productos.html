@@ -72,7 +72,7 @@
         // AJAX LOAD
         const xhr = new XMLHttpRequest();
 
-        xhr.open('POST', "data/" + nombreCategoria + ".json", true);
+        xhr.open('GET', "data/" + nombreCategoria + ".json", true);
         xhr.onload = function () {
             // Parse JSON data first
             // Will give you back an array
