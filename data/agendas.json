@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "nombre": "Diseño Ejecutivo",
+    "precio": 500.00,
+    "descripcion": "Ideal para organizarte mejor",
+    "imagen": "imagenes/cuaderno-1.jpg",
+    "detalles": [
+      { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
+      { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
+      { "texto": "AGENDA VISTA SEMANAL" }
+    ]
+  },
+  {
+    "nombre": "Diseño Conquer the World",
+    "precio": 300.00,
+    "descripcion": "Planeá conquistar el mundo",
+    "imagen": "imagenes/cuaderno-12.jpeg",
+    "detalles": [
+      { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
+      { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
+      { "texto": "AGENDA VISTA SEMANAL" }
+    ]
+  },
+  {
+    "nombre": "Diseño Ideas",
+    "precio": 250.00,
+    "descripcion": "Reflejá el corazon del universo",
+    "imagen": "imagenes/cuaderno-13.jpeg",
+    "detalles": [
+      { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
+      { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
+      { "texto": "AGENDA VISTA SEMANAL" }
+    ]
+  },
+  {
+    "nombre": "Diseño Moment",
+    "precio": 450.00,
+    "descripcion": "Tomate un momento para vos",
+    "imagen": "imagenes/cuaderno-14.jpeg",
+    "detalles": [
+      { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
+      { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
+      { "texto": "AGENDA VISTA SEMANAL" }
+    ]
+  }
+]
