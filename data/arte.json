@@ -1,5 +1,6 @@
 [
     {
+        "id": "1",
         "nombre": "Diseño ELvis",
         "precio": 1000.00,
         "descripcion": "Inspirate con El Rey",
@@ -11,6 +12,7 @@
         ]
     },
     {
+        "id": "2",
         "nombre": "Diseño Cineasta",
         "precio": 700.00,
         "descripcion": "Escribí tu película",
@@ -22,6 +24,7 @@
         ]
     },
     {
+        "id": "3",
         "nombre": "Diseño Músico",
         "precio": 850.00,
         "descripcion": "Para escribir las mejores canciones",

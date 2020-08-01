@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos-detalle.css">
 </head>
 
-<body>
+<body onload="load();">
 <header>
     <div class="container-logo">
         <div class="nombre-empresa">
@@ -39,46 +40,28 @@
 
 <div class="container">
     <section>
-
         <div class="row">
 
-            <div class="col-sm-12 col-lg-6">
-                <img src="imagenes/cuaderno-1.jpg" style="width: 400px; margin: 40px">
+            <div id="container-imagen" class="col-sm-12 col-lg-6">
             </div>
 
-            <div class="col-sm-12 col-md-6">
-                <h1 class="product_title entry-title">Diseño Ejecutivo</h1>
-                <ul>
-                    <li>MEDIDAS 21 X 15. TAMAÑO A5</li><br>
-                    <li>HOJA BOOKCEL. COLOR BLANCO</li><br>
-                    <li>AGENDA VISTA SEMANAL</li><br>
-                    <li>SEPARADOR MENSUAL</li><br>
-                    <li>ELABORADAS 100% A MANO</li><br>
-                </ul>
+            <div id="container-detalle-descripcion" class="col-sm-12 col-md-6">
+            </div>
+            <div class="col-8">
+                <h4>Compartir este producto</h4>
+                <div class="footer-links">
+                    <a class="footer-links" href="https://www.facebook.com/dreambooks.art/" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="footer-links" href="https://www.instagram.com/dreambooks.art/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="footer-links" href="#" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div><br>
 
-                <div class="col-8">
-
-                    <h4 style="text-align: end;">$700,00</h4>
-
-                    <h4>Compartir este producto</h4>
-
-                    <div class="footer-links">
-
-                        <a class="footer-links" href="https://www.facebook.com/dreambooks.art/" target="_blank">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-
-                        <a class="footer-links" href="https://www.instagram.com/dreambooks.art/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-
-                        <a class="footer-links" href="#" target="_blank">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div><br>
-
-                    <button id="btnComprar" type="button" onclick="mostrar()" class="btn-compra" >Comprar</button>
-                </div>
+                <button id="btnComprar" type="button" onclick="mostrar()" class="btn-compra" >Comprar</button>
             </div>
         </div>
     </section>
@@ -154,6 +137,43 @@
         }
     }
 
+    function load() {
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const nombreCategoria =urlParams.get('cat');
+        const idProd =urlParams.get('id');
+
+        // AJAX LOAD
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', "data/" + nombreCategoria + ".json", true);
+        xhr.onload = function () {
+            // Parse JSON data first
+            // Will give you back an array
+            const data = JSON.parse(this.response);
+
+            const producto = data.find((prod) => prod.id === idProd);
+
+            if(producto){
+                let img = "<img src='"+ producto.imagen +"' class='detalle-foto'>";
+                document.getElementById("container-imagen").innerHTML = img;
+
+                //TITULO
+                const titulo = "<h1 class='product_title entry-title'>" + producto.nombre + "</h1>";
+
+                let ulDet = "<ul>";
+                for(let detalle of producto.detalles) {
+                    ulDet += "<li>"+ detalle.texto+ "</li><br>";
+                }
+                ulDet += "</ul>";
+
+                const h4 = "<h4 style='text-align: end;'> $ " + producto.precio + "</h4>";
+
+                document.getElementById("container-detalle-descripcion").innerHTML = titulo + ulDet + h4;
+            }
+
+        };
+        xhr.send();
+    }
 
 </script>
 </body>

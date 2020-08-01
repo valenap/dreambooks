@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "nombre": "Diseño Clásico claro",
     "precio": 500.00,
     "descripcion": "Redactá tus viajes",
@@ -11,6 +12,7 @@
     ]
   },
   {
+    "id": "2",
     "nombre": "Diseño Objetivo",
     "precio": 550.00,
     "descripcion": "¿Qué país te marcó más?",
@@ -22,6 +24,7 @@
     ]
   },
   {
+    "id": "3",
     "nombre": "Diseño Clásico",
     "precio": 450.00,
     "descripcion": "Reflejá tus mejores momentos",
@@ -33,6 +36,7 @@
     ]
   },
   {
+    "id": "4",
     "nombre": "Diseño Correcamino",
     "precio": 350.00,
     "descripcion": "Señalá tu recorrido",

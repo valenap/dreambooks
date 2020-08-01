@@ -12,6 +12,7 @@
     ]
   },
   {
+    "id": "2",
     "nombre": "Diseño Conquer the World",
     "precio": 300.00,
     "descripcion": "Planeá conquistar el mundo",
@@ -23,6 +24,7 @@
     ]
   },
   {
+    "id": "3",
     "nombre": "Diseño Ideas",
     "precio": 250.00,
     "descripcion": "Reflejá el corazon del universo",
@@ -34,6 +36,7 @@
     ]
   },
   {
+    "id": "4",
     "nombre": "Diseño Moment",
     "precio": 450.00,
     "descripcion": "Tomate un momento para vos",
