@@ -72,10 +72,50 @@ nav ul li {
     border-bottom: 3px solid #555555;
 }
 
+.tabs-underlined .tab-underlined.active {
+    opacity: 1;
+    border-bottom: 3px solid #555555;
+}
+
 main {
     background-color: #cdeac0;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.card-product {
+    overflow: hidden;
+    height: 200px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.card-product img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.card-product h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-product p {
+    font-size: 12px;
+    line-height: 1.4;
+    opacity: .7;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+    padding: 16px;
 }
 
 #productos {
@@ -145,21 +185,7 @@ hr {
     width: 50%;
 }
 
-#agendas {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-}
-
-#viajes {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-}
-
-#arte {
+#titulo-productos {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -245,6 +271,12 @@ hr {
     }
 }
 
+/*@media (max-width: 768px) {
+    body {
+        font-size: 2em;
+    }
+}*/
+
 .card-trip {
     overflow: hidden;
     background: white;
@@ -261,10 +293,17 @@ hr {
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
-.card-trip > img {
+.card-trip img {
     width: 300px;
     height: 250px;
     object-fit: cover;
+}
+
+.card-trip a{
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    color: black;"
 }
 
 .card-trip h2 {
@@ -310,6 +349,7 @@ hr {
     border-color: #00C9D8;
     border-radius: 5px;
     color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
 .btn-compra:hover{
@@ -318,7 +358,20 @@ hr {
     color: #00C9D8;
 }
 
-#contacto {
+.contacto {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    width: 500px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    position: relative;
+    margin-top: -100px;
+}
+
+#contactanos {
     display: flex;
     flex-wrap: wrap;
     width: 100%;

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>DreamBooks | Cuadernos Artesanales</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="cuadernos artesanales, artesanías, agendas, diarios, viajes, diarios viajeros">
+    <link rel="icon" href="imagenes/favicon-libro.gif">
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body onload="loadProductos();">
+
+<header>
+    <div class="container-logo">
+        <div class="nombre-empresa">
+            <a href="index.html">
+                <img src="imagenes/logotipo.png" style=" width: 200px;"alt="">
+            </a>
+        </div>
+    </div>
+
+    <nav>
+        <ul class="list-inline tabs-underlined">
+            <li>
+                <a href="secciones.html" class="tab-underlined">Productos</a>
+            </li>
+            <li>
+                <a href="contacto.html" class="tab-underlined">Contacto</a>
+            </li>
+            <li>
+                <a href="#" class="tab-underlined">Nosotros</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<h1 id="titulo-productos">Viajes</h1>
+<hr>
+
+<div id="container-productos">
+</div>
+
+<footer>
+
+    <div class="footer">
+        <div class="footer-links">
+            <a href="https://github.com/valenap" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/dreambooks.art/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/dreambooks.art/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="footer-copyright">
+            Hecho con <i class="fas fa-heart"></i> por Valentina Andrada Perino
+        </div>
+    </div>
+</footer>
+
+<script>
+    function loadProductos() {
+
+        const urlParams = new URLSearchParams(window.location.search);
+
+        const nombreCategoria =urlParams.get('cat');
+
+        // Configuro Header de Categoria
+        document.getElementById("titulo-productos").innerHTML = nombreCategoria;
+
+
+        // AJAX LOAD
+        const xhr = new XMLHttpRequest();
+
+        xhr.open('POST', "data/" + nombreCategoria + ".json", true);
+        xhr.onload = function () {
+            // Parse JSON data first
+            // Will give you back an array
+            var data = JSON.parse(this.response);
+            console.log(data);
+
+            // Build HTML table with given data
+            let cards = "<div id='productos'>"
+            for (let producto of data) {
+                var card = "<div class='card-trip'>";
+                card += "<a href='detalle.html?cat=" + nombreCategoria + "&id=" + producto.id + "' >";
+                card += "<img src='" + producto.imagen + "' />";
+                card += "<div class='card-trip-infos'>";
+                card += "<div>";
+                card += "<h2>" + producto.nombre + "</h2>";
+                card += "<p>" + producto.descripcion + "</p>";
+                card += "</div>";
+                card += "<h2 class='card-trip-pricing'> $" + producto.precio + "</h2>";
+                card += "</div>";
+                card += "</a>";
+                card += "</div>";
+                cards += card;
+            }
+            cards += "</div>";
+            // Put table into HTML container
+            document.getElementById("container-productos").innerHTML = cards;
+        };
+        xhr.send();
+    }
+</script>
+</body>
+</html>

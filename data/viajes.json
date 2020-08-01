@@ -1,0 +1,46 @@
+[
+  {
+    "nombre": "Diseño Clásico claro",
+    "precio": 500.00,
+    "descripcion": "Redactá tus viajes",
+    "imagen": "imagenes/cuaderno-8.png",
+    "detalles": [
+      { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
+      { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
+      { "texto": "AGENDA VISTA SEMANAL" }
+    ]
+  },
+  {
+    "nombre": "Diseño Objetivo",
+    "precio": 550.00,
+    "descripcion": "¿Qué país te marcó más?",
+    "imagen": "imagenes/cuaderno-4.jpg",
+    "detalles": [
+      { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
+      { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
+      { "texto": "AGENDA VISTA SEMANAL" }
+    ]
+  },
+  {
+    "nombre": "Diseño Clásico",
+    "precio": 450.00,
+    "descripcion": "Reflejá tus mejores momentos",
+    "imagen": "imagenes/cuaderno-5.jpeg",
+    "detalles": [
+      { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
+      { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
+      { "texto": "AGENDA VISTA SEMANAL" }
+    ]
+  },
+  {
+    "nombre": "Diseño Correcamino",
+    "precio": 350.00,
+    "descripcion": "Señalá tu recorrido",
+    "imagen": "imagenes/cuaderno-7.jpeg",
+    "detalles": [
+      { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
+      { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
+      { "texto": "AGENDA VISTA SEMANAL" }
+    ]
+  }
+]

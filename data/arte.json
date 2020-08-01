@@ -1,0 +1,35 @@
+[
+    {
+        "nombre": "Diseño ELvis",
+        "precio": 1000.00,
+        "descripcion": "Inspirate con El Rey",
+        "imagen": "imagenes/cuaderno-9.jpeg",
+        "detalles": [
+            { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
+            { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
+            { "texto": "AGENDA VISTA SEMANAL" }
+        ]
+    },
+    {
+        "nombre": "Diseño Cineasta",
+        "precio": 700.00,
+        "descripcion": "Escribí tu película",
+        "imagen": "imagenes/cuaderno-10.jpeg",
+        "detalles": [
+            { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
+            { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
+            { "texto": "AGENDA VISTA SEMANAL" }
+        ]
+    },
+    {
+        "nombre": "Diseño Músico",
+        "precio": 850.00,
+        "descripcion": "Para escribir las mejores canciones",
+        "imagen": "imagenes/cuaderno-11.jpeg",
+        "detalles": [
+            { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
+            { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
+            { "texto": "AGENDA VISTA SEMANAL" }
+        ]
+    }
+]
