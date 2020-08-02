@@ -57,8 +57,8 @@ nav ul li {
 }
 
 .tabs-underlined {
-    display: flex;
     align-items: center;
+    font-size: 1.5em;
 }
 
 .tabs-underlined .tab-underlined {
@@ -220,6 +220,12 @@ hr {
     margin: 10px;
 }
 
+@media (max-width: 575px) {
+    .card-category {
+        width: 300px;
+    }
+}
+
 .card-category h2 {
     transition: transform 0.3s ease-in-out 0s;
 }
@@ -229,8 +235,6 @@ hr {
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
 }
