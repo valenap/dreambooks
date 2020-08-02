@@ -39,7 +39,6 @@
 </header>
 
 <div class="container">
-    <section>
         <div class="row">
 
             <div id="container-imagen" class="col-sm-12 col-lg-6">
@@ -60,56 +59,70 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div><br>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn-compra" data-toggle="modal" data-target="#exampleModalCenter">
+                    Comprar
+                </button>
 
-                <button id="btnComprar" type="button" onclick="mostrar()" class="btn-compra" >Comprar</button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Ingresa tus datos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="form-group">
+
+                                        <label>Nombre</label>
+                                        <input type="text" id="defaultContactFormName" class="form-control mb-4">
+
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="on" required>
+                                        <small id="emailHelp" class="form-text text-muted">No compartiremos su mail con nadie.</small>
+                                        <br>
+
+                                        <div>
+                                            <label for="inputCity">Dirección</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <br>
+
+                                        <select class="browser-default custom-select mb-4" required>
+                                            <option value="" disabled>Escoje uno</option>
+                                            <option value="1">Medio de pago</option>
+                                            <option value="2">Mercado Pago</option>
+                                            <option value="3">PayPal</option>
+                                            <option value="4">Débito</option>
+                                            <option value="5">Crédito</option>
+                                        </select>
+                                        <br>
+
+                                        <div class="form-group">
+                                            <label>Producto/s que desea comprar</label>
+                                            <textarea class="form-control rounded-0" id="form-compra-detalle-producto" rows="3">
+
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn-compra" data-dismiss="modal">Enviar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </section>
-
-
-
-
-    <div class="col-sm-12 col-md-6" style="margin-right: auto; margin-top: 10px; margin-bottom: 40px; display: none;" id="form-compra">
-        <form>
-
-            <div class="form-group">
-
-                <label>Nombre</label>
-                <input type="text" id="defaultContactFormName" class="form-control mb-4">
-
-                <label for="exampleInputEmail1">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="on" required>
-                <small id="emailHelp" class="form-text text-muted">No compartiremos su mail con nadie.</small>
-                <br>
-
-                <div>
-                    <label for="inputCity">Dirección</label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
-                <br>
-
-                <select class="browser-default custom-select mb-4" required>
-                    <option value="" disabled>Escoje uno</option>
-                    <option value="1">Medio de pago</option>
-                    <option value="2">Mercado Pago</option>
-                    <option value="3">PayPal</option>
-                    <option value="4">Débito</option>
-                    <option value="5">Crédito</option>
-                </select>
-                <br>
-
-                <div class="form-group">
-                    <label>Producto/s que desea comprar</label>
-                    <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"></textarea>
-                </div>
-
-            </div>
-            <button type="submit" class="btn-compra">Enviar</button>
-        </form>
-    </div>
 </div>
-
-
 <footer>
 
     <div class="footer">
@@ -123,20 +136,10 @@
         </div>
     </div>
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    function mostrar(){
-        const accion = document.getElementById('btnComprar').innerText;
-        if(accion === 'Comprar'){
-            document.getElementById('form-compra').style.display = 'block';
-            document.getElementById('btnComprar').innerText = 'Cancelar';
-        }
-        else {
-            document.getElementById('form-compra').style.display = 'none';
-            document.getElementById('btnComprar').innerText = 'Comprar';
-        }
-    }
-
     function load() {
 
         const urlParams = new URLSearchParams(window.location.search);
@@ -169,11 +172,19 @@
                 const h4 = "<h4 style='text-align: end;'> $ " + producto.precio + "</h4>";
 
                 document.getElementById("container-detalle-descripcion").innerHTML = titulo + ulDet + h4;
+
+                let textoDetalleCompra = "Cuaderno modelo: " + producto.nombre + ", código(" + producto.id + ") PRECIO $" + producto.precio;
+
+                document.getElementById("form-compra-detalle-producto").innerHTML = textoDetalleCompra;
             }
 
         };
         xhr.send();
     }
+
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
 
 </script>
 </body>
