@@ -5,7 +5,27 @@
         <title>DreamBooks | Cuadernos Artesanales</title>
         <meta charset="utf-8">
         <meta name="keywords" content="cuadernos artesanales, artesanías, agendas, diarios, viajes, diarios viajeros">
-        <link rel="icon" href="imagenes/favicon-libro.gif">
+        <link rel="icon" href="imagenes/favicon-libro.ico">
+
+        <!-- Primary Meta Tags -->
+        <title>Dreambooks | Encuadernación Artesanal</title>
+        <meta name="title" content="Dreambooks | Encuadernación Artesanal">
+        <meta name="description" content="Cuadernos 100% artesanales, hechos con mucho amor, para todo público">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://valenap.github.io/dreambooks/">
+        <meta property="og:title" content="Dreambooks | Encuadernación Artesanal">
+        <meta property="og:description" content="Cuadernos 100% artesanales, hechos con mucho amor, para todo público">
+        <meta property="og:image" content="imagenes/meta-tag-foto-logo.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://valenap.github.io/dreambooks/">
+        <meta property="twitter:title" content="Dreambooks | Encuadernación Artesanal">
+        <meta property="twitter:description" content="Cuadernos 100% artesanales, hechos con mucho amor, para todo público">
+        <meta property="twitter:image" content="imagenes/meta-tag-foto-logo.png">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Noto+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -15,34 +35,39 @@
     </head>
 
     <body>
-    <div class="container" style="max-width: 100%">
-        <div class="row">
-            <div class="col-12 col-md-12 col-sm-12">
-                <header>
-                    <div class="container-logo">
-                        <div class="nombre-empresa">
-                            <a href="index.html">
-                                <img src="imagenes/logotipo.png" style=" width: 200px;"alt="">
-                            </a>
-                        </div>
-                    </div>
+        <div class="navbar navbar-expand-md navbar-light navbar-lewagon">
+            <div class="container-logo">
+                <div class="nombre-empresa">
+                    <a href="index.html">
+                        <img src="imagenes/logotipo.png" style=" width: 200px;"alt="">
+                    </a>
+                </div>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <nav>
-                        <div class="tabs-underlined">
-                            <a href="secciones.html" class="tab-underlined">Productos</a>
-                            <a href="#section-contactanos" class="tab-underlined">Contacto</a>
-                        </div>
-                    </nav>
-                </header>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <div class="tabs-underlined">
+                        <a href="secciones.html" class="tab-underlined">Productos</a>
+                        <a href="#section-contactanos" class="tab-underlined">Contacto</a>
+                    </div>
+                </ul>
             </div>
         </div>
-    </div>
 
         <div class="container">
 
             <main>
 
                 <div class="row">
+
+                        <div class="col-12 text-center d-none d-md-none d-md-block"" style="font-size: 2em; margin: 20px 0 30px;">
+                            <div id="title"></div>
+                        </div>
+
                     <div class="col-12">
                         <section>
                             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -82,7 +107,7 @@
                                 </div>
 
                                 <div class="col-6 text-center">
-                                    <img src="imagenes/seccion-viajes.jpg" style="width: 200px; border-radius: 50%;">
+                                    <img src="imagenes/seccion-viajes.jpg" style="width: 20vh; border-radius: 50%;">
                                 </div>
                             </div>
                         </section>
@@ -139,7 +164,7 @@
 
         <footer>
 
-            <div class="footer">
+            <div class="footer" style="position: relative">
                 <div class="footer-links">
                     <a href="https://github.com/valenap"><i class="fab fa-github"></i></a>
                     <a href="https://www.instagram.com/dreambooks.art/"><i class="fab fa-instagram"></i></a>
@@ -156,6 +181,20 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script type="text/javascript" src="core.js"></script>
         <script type="text/javascript">
+            var title = document.getElementById('title');
+
+            var typewriter = new Typewriter(title, {
+                loop: true
+            });
+
+            typewriter.typeString('Dreambooks')
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString('Cuadernos Artesanales')
+                .pauseFor(2500)
+                .deleteAll()
+                .start();
+
             var app = document.getElementById('app');
 
             var typewriter = new Typewriter(app, {

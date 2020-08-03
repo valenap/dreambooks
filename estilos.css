@@ -5,37 +5,31 @@ header {
     padding-bottom: 10px;
 }
 
+.header {
+    background-color: #fff;
+}
+
+.navbar-lewagon {
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+    padding-bottom: 10px;
+}
+
+.navbar-lewagon .navbar-brand img {
+    width: 40px;
+}
+
 body {
     margin: 0;
     font-family: 'Gabriela', serif;
     font-style: normal;
     background-color: #8EC5FC;
     background-image: linear-gradient(0deg, #8EC5FC 0%, #E0C3FC 32%, #ffffff 100%);
-}
-
-
-/*.container-logo {
-
-}*/
-
-.nombre-empresa {
-    font-family: "Noto Sans";
-    font-size: 2.5em;
-    padding:12px 0px 0px 12px;
-}
-
-.nombre-empresa a {
-    color: #000000;
-}
-
-.nombre-empresa a:hover{
-    text-decoration: none;
-}
-
-.subtitulo-empresa {
-    font-family: "Noto Sans";
-    font-size: 1em;
-    text-align: center;
 }
 
 nav {
@@ -378,7 +372,7 @@ hr {
 @media (max-width: 768px) {
     .contacto {
         width: 100%;
-        margin-top: 0;
+        margin-top: 20px;
     }
 }
 
@@ -402,10 +396,12 @@ hr {
     text-decoration: none;
     color: #00C9D8;
 }
+
 footer {
     width: 100%;
     height: 100px;
 }
+
 .footer {
     /*background: #00C9D8;*/
     background: #536976;  /* fallback for old browsers */
@@ -428,7 +424,7 @@ footer {
 }
 
 .footer-links a {
-    color: black;
+    color: white;
     opacity: 0.15;
     text-decoration: none;
     font-size: 24px;
@@ -445,3 +441,6 @@ footer {
     color: #D23333;
 }
 
+.footer-copyright {
+    color: #f4f4f4;
+}

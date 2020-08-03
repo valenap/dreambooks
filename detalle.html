@@ -5,36 +5,57 @@
     <title>DreamBooks | Cuadernos Artesanales</title>
     <meta charset="utf-8">
     <meta name="keywords" content="cuadernos artesanales, artesanías, agendas, diarios, viajes, diarios viajeros">
-    <link rel="icon" href="imagenes/favicon-libro.gif">
+    <link rel="icon" href="imagenes/favicon-libro.ico">
+
+    <!-- Primary Meta Tags -->
+    <title>Dreambooks | Encuadernación Artesanal</title>
+    <meta name="title" content="Dreambooks | Encuadernación Artesanal">
+    <meta name="description" content="Cuadernos 100% artesanales, hechos con mucho amor, para todo público">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valenap.github.io/dreambooks/">
+    <meta property="og:title" content="Dreambooks | Encuadernación Artesanal">
+    <meta property="og:description" content="Cuadernos 100% artesanales, hechos con mucho amor, para todo público">
+    <meta property="og:image" content="imagenes/meta-tag-foto-logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://valenap.github.io/dreambooks/">
+    <meta property="twitter:title" content="Dreambooks | Encuadernación Artesanal">
+    <meta property="twitter:description" content="Cuadernos 100% artesanales, hechos con mucho amor, para todo público">
+    <meta property="twitter:image" content="imagenes/meta-tag-foto-logo.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="estilos-detalle.css">
+
 </head>
 
 <body onload="load();">
-<div class="container" style="max-width: 100%">
-    <div class="row">
-        <div class="col-12 col-md-12 col-sm-12">
-            <header>
-                <div class="container-logo">
-                    <div class="nombre-empresa">
-                        <a href="index.html">
-                            <img src="imagenes/logotipo.png" style=" width: 200px;"alt="">
-                        </a>
-                    </div>
-                </div>
-
-                <nav>
-                    <div class="tabs-underlined">
-                        <a href="secciones.html" class="tab-underlined">Productos</a>
-                        <a href="index.html#section-contactanos" class="tab-underlined">Contacto</a>
-                    </div>
-                </nav>
-            </header>
+<div class="navbar navbar-expand-md navbar-light navbar-lewagon">
+    <div class="container-logo">
+        <div class="nombre-empresa">
+            <a href="index.html">
+                <img src="imagenes/logotipo.png" style=" width: 200px;"alt="">
+            </a>
         </div>
+    </div>
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <div class="tabs-underlined">
+                <a href="secciones.html" class="tab-underlined">Productos</a>
+                <a href="index.html#section-contactanos" class="tab-underlined">Contacto</a>
+            </div>
+        </ul>
     </div>
 </div>
 
@@ -43,22 +64,22 @@
     <main>
         <div class="row d-flow justify-content-center">
 
-            <div id="container-imagen" class="col-sm-12 col-md-6">
+            <div id="container-imagen" class="col-sm-12 col-lg-6">
             </div>
 
-            <div id="container-detalle-descripcion" class="col-12 col-md-6">
+            <div id="container-detalle-descripcion" class="col-12 col-lg-6">
             </div>
             <div class="col-12">
                 <h4>Compartir este producto</h4>
-                <div class="footer-links">
-                    <a class="footer-links" href="https://www.facebook.com/dreambooks.art/" target="_blank">
+                <div class="compartir-links">
+                    <a href="https://facebook.com/dreambooks.art/" target="_blank">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a class="footer-links" href="https://www.instagram.com/dreambooks.art/" target="_blank">
+                    <a href="https://www.instagram.com/dreambooks.art/" target="_blank">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="footer-links" href="#" target="_blank">
-                        <i class="fas fa-envelope"></i>
+                    <a href="https://pinterest.com" target="_blank">
+                        <i class="fab fa-pinterest"></i>
                     </a>
                 </div><br>
                 <!-- Button trigger modal -->
@@ -190,7 +211,6 @@
     $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').trigger('focus')
     })
-
 </script>
 </body>
 </html>
