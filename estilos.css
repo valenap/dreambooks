@@ -155,6 +155,10 @@ h1 {
     padding:12px 0px 0px 12px;
 }
 
+p, span {
+    font-size: 1.3em;
+}
+
 #secciones {
     display: flex;
     flex-wrap: wrap;
@@ -199,9 +203,9 @@ hr {
 }
 
 .carousel-img {
-    width: 600px;
-    height: 450px;
+    width: 100%;
 }
+
 
 .card-category {
     background-size: cover;
@@ -311,13 +315,13 @@ hr {
 }
 
 .card-trip h2 {
-    font-size: 16px;
+    font-size: 1.2em;
     font-weight: bold;
     margin: 0;
 }
 
 .card-trip p {
-    font-size: 12px;
+    font-size: 1em;
     opacity: .7;
     margin: 0;
 }
