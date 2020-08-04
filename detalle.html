@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+    <head>
     <title>DreamBooks | Cuadernos Artesanales</title>
     <meta charset="utf-8">
     <meta name="keywords" content="cuadernos artesanales, artesanías, agendas, diarios, viajes, diarios viajeros">
@@ -35,182 +35,183 @@
 
 </head>
 
-<body onload="load();">
-<div class="navbar navbar-expand-md navbar-light navbar-lewagon">
-    <div class="container-logo">
-        <div class="nombre-empresa">
-            <a href="index.html">
-                <img src="imagenes/logotipo.png" style=" width: 200px;"alt="">
-            </a>
+    <body onload="load();">
+        <div class="navbar navbar-expand-md navbar-light navbar-lewagon">
+            <div class="container-logo">
+                <div class="nombre-empresa">
+                    <a href="index.html">
+                        <img src="imagenes/logotipo.png" style=" width: 200px;"alt="">
+                    </a>
+                </div>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <div class="tabs-underlined">
+                        <a href="secciones.html" class="tab-underlined">Productos</a>
+                        <a href="index.html#section-contactanos" class="tab-underlined">Contacto</a>
+                    </div>
+                </ul>
+            </div>
         </div>
-    </div>
-    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <div class="tabs-underlined">
-                <a href="secciones.html" class="tab-underlined">Productos</a>
-                <a href="index.html#section-contactanos" class="tab-underlined">Contacto</a>
-            </div>
-        </ul>
-    </div>
-</div>
+        <div class="container">
+            <main>
+                <div class="row d-flow justify-content-center">
 
+                    <div id="container-imagen" class="col-sm-12 col-lg-6">
+                    </div>
 
-<div class="container" style="margin: 1em;">
-    <main>
-        <div class="row d-flow justify-content-center">
+                    <div id="container-detalle-descripcion" class="col-12 col-lg-6">
+                    </div>
 
-            <div id="container-imagen" class="col-sm-12 col-lg-6">
-            </div>
+                    <div class="col-12">
+                        <h4>Compartir este producto</h4>
+                        <div class="compartir-links">
+                            <a href="https://facebook.com/dreambooks.art/" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dreambooks.art/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://pinterest.com" target="_blank">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div><br>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn-compra" data-toggle="modal" data-target="#exampleModalCenter">
+                            Comprar
+                        </button>
 
-            <div id="container-detalle-descripcion" class="col-12 col-lg-6">
-            </div>
-            <div class="col-12">
-                <h4>Compartir este producto</h4>
-                <div class="compartir-links">
-                    <a href="https://facebook.com/dreambooks.art/" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/dreambooks.art/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://pinterest.com" target="_blank">
-                        <i class="fab fa-pinterest"></i>
-                    </a>
-                </div><br>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn-compra" data-toggle="modal" data-target="#exampleModalCenter">
-                    Comprar
-                </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Ingresa tus datos</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Ingresa tus datos</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
+                                            <div class="form-group">
 
-                                    <div class="form-group">
+                                                <label>Nombre</label>
+                                                <input type="text" id="defaultContactFormName" class="form-control mb-4">
 
-                                        <label>Nombre</label>
-                                        <input type="text" id="defaultContactFormName" class="form-control mb-4">
+                                                <label for="exampleInputEmail1">Email</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="on" required>
+                                                <small id="emailHelp" class="form-text text-muted">No compartiremos su mail con nadie.</small>
+                                                <br>
 
-                                        <label for="exampleInputEmail1">Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="on" required>
-                                        <small id="emailHelp" class="form-text text-muted">No compartiremos su mail con nadie.</small>
-                                        <br>
+                                                <div>
+                                                    <label for="inputCity">Dirección</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <br>
 
-                                        <div>
-                                            <label for="inputCity">Dirección</label>
-                                            <input type="text" class="form-control" id="inputCity">
-                                        </div>
-                                        <br>
+                                                <select class="browser-default custom-select mb-4" required>
+                                                    <option value="" disabled>Escoje uno</option>
+                                                    <option value="1">Medio de pago</option>
+                                                    <option value="2">Mercado Pago</option>
+                                                    <option value="3">PayPal</option>
+                                                    <option value="4">Débito</option>
+                                                    <option value="5">Crédito</option>
+                                                </select>
+                                                <br>
 
-                                        <select class="browser-default custom-select mb-4" required>
-                                            <option value="" disabled>Escoje uno</option>
-                                            <option value="1">Medio de pago</option>
-                                            <option value="2">Mercado Pago</option>
-                                            <option value="3">PayPal</option>
-                                            <option value="4">Débito</option>
-                                            <option value="5">Crédito</option>
-                                        </select>
-                                        <br>
+                                                <div class="form-group">
+                                                    <label>Producto/s que desea comprar</label>
+                                                    <textarea class="form-control rounded-0" id="form-compra-detalle-producto" rows="3">
 
-                                        <div class="form-group">
-                                            <label>Producto/s que desea comprar</label>
-                                            <textarea class="form-control rounded-0" id="form-compra-detalle-producto" rows="3">
-
-                                            </textarea>
+                                                    </textarea>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn-compra" data-dismiss="modal">Enviar</button>
                                         </div>
                                     </div>
-                                </form>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn-compra" data-dismiss="modal">Enviar</button>
+
                                 </div>
                             </div>
-
                         </div>
+
                     </div>
                 </div>
+            </main>
+        </div>
 
+
+        <footer>
+
+            <div class="footer">
+                <div class="footer-links">
+                    <a href="https://github.com/valenap" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/dreambooks.art/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/dreambooks.art/" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    Hecho con <i class="fas fa-heart"></i> por Valentina Andrada Perino
+                </div>
             </div>
-        </div>
-    </main>
-</div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function load() {
 
+                const urlParams = new URLSearchParams(window.location.search);
+                const nombreCategoria =urlParams.get('cat');
+                const idProd =urlParams.get('id');
 
-<footer>
+                // AJAX LOAD
+                const xhr = new XMLHttpRequest();
+                xhr.open('GET', "data/" + nombreCategoria + ".json", true);
+                xhr.onload = function () {
+                    // Parse JSON data first
+                    // Will give you back an array
+                    const data = JSON.parse(this.response);
 
-    <div class="footer">
-        <div class="footer-links">
-            <a href="https://github.com/valenap" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/dreambooks.art/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/dreambooks.art/" target="_blank"><i class="fab fa-facebook"></i></a>
-        </div>
-        <div class="footer-copyright">
-            Hecho con <i class="fas fa-heart"></i> por Valentina Andrada Perino
-        </div>
-    </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script type="text/javascript">
-    function load() {
+                    const producto = data.find((prod) => prod.id === idProd);
 
-        const urlParams = new URLSearchParams(window.location.search);
-        const nombreCategoria =urlParams.get('cat');
-        const idProd =urlParams.get('id');
+                    if(producto){
+                        let img = "<img src='"+ producto.imagen +"' class='detalle-foto'>";
+                        document.getElementById("container-imagen").innerHTML = img;
 
-        // AJAX LOAD
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', "data/" + nombreCategoria + ".json", true);
-        xhr.onload = function () {
-            // Parse JSON data first
-            // Will give you back an array
-            const data = JSON.parse(this.response);
+                        //TITULO
+                        const titulo = "<h1 class='product_title entry-title'>" + producto.nombre + "</h1>";
 
-            const producto = data.find((prod) => prod.id === idProd);
+                        let ulDet = "<ul>";
+                        for(let detalle of producto.detalles) {
+                            ulDet += "<li>"+ detalle.texto+ "</li><br>";
+                        }
+                        ulDet += "</ul>";
 
-            if(producto){
-                let img = "<img src='"+ producto.imagen +"' class='detalle-foto'>";
-                document.getElementById("container-imagen").innerHTML = img;
+                        const precio = "<div class='d-flex justify-content-center'><span class='precio'> $ " + producto.precio + "</span></div>";
 
-                //TITULO
-                const titulo = "<h1 class='product_title entry-title'>" + producto.nombre + "</h1>";
+                        document.getElementById("container-detalle-descripcion").innerHTML = titulo + ulDet + precio;
 
-                let ulDet = "<ul>";
-                for(let detalle of producto.detalles) {
-                    ulDet += "<li>"+ detalle.texto+ "</li><br>";
-                }
-                ulDet += "</ul>";
+                        let textoDetalleCompra = "Cuaderno modelo: " + producto.nombre + ", código(" + producto.id + ") PRECIO $" + producto.precio;
 
-                const precio = "<div class='d-flex justify-content-center'><span class='precio'> $ " + producto.precio + "</span></div>";
+                        document.getElementById("form-compra-detalle-producto").innerHTML = textoDetalleCompra;
+                    }
 
-                document.getElementById("container-detalle-descripcion").innerHTML = titulo + ulDet + precio;
-
-                let textoDetalleCompra = "Cuaderno modelo: " + producto.nombre + ", código(" + producto.id + ") PRECIO $" + producto.precio;
-
-                document.getElementById("form-compra-detalle-producto").innerHTML = textoDetalleCompra;
+                };
+                xhr.send();
             }
 
-        };
-        xhr.send();
-    }
-
-    $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus')
-    })
-</script>
-</body>
+            $('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus')
+            })
+        </script>
+    </body>
 </html>
