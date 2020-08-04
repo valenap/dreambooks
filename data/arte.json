@@ -19,19 +19,31 @@
         "imagen": "imagenes/cuaderno-10.jpeg",
         "detalles": [
             { "texto": "Medidas 21 X 15" },
-            { "texto": "Hojas Resma Bookcel (color ahuesado)" }
+            { "texto": "Hojas Resma Bookcel (color ahuesado, rayadas)" }
         ]
     },
     {
         "id": "3",
         "nombre": "Diseño Músico",
         "precio": 850.00,
-        "descripcion": "Para escribir las mejores canciones",
+        "descripcion": "Para escribir buenas canciones",
         "imagen": "imagenes/cuaderno-11.jpeg",
         "detalles": [
             { "texto": "Medidas 21 X 15" },
             { "texto": "Hojas Resma (blancas)" },
             { "texto": "Con frases de grandes músicos" }
+        ]
+    },
+    {
+        "id": "4",
+        "nombre": "Diseño Fibonacci",
+        "precio": 800.00,
+        "descripcion": "Conectate con tu entorno",
+        "imagen": "imagenes/cuaderno-15.jpeg",
+        "detalles": [
+            { "texto": "Medidas 21 X 15" },
+            { "texto": "Hojas Resma Bookcel (blancas, cuadriculadas)" },
+            { "texto": "Con definición de Fibonacci" }
         ]
     }
 ]
