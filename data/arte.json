@@ -1,14 +1,14 @@
 [
     {
         "id": "1",
-        "nombre": "Diseño ELvis",
+        "nombre": "Diseño Elvis",
         "precio": 1000.00,
         "descripcion": "Inspirate con El Rey",
         "imagen": "imagenes/cuaderno-9.jpeg",
         "detalles": [
-            { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
-            { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
-            { "texto": "AGENDA VISTA SEMANAL" }
+            { "texto": "Medidas 20 X 20" },
+            { "texto": "Hojas pentagramadas (blancas)" },
+            { "texto": "Edición limitada" }
         ]
     },
     {
@@ -18,9 +18,8 @@
         "descripcion": "Escribí tu película",
         "imagen": "imagenes/cuaderno-10.jpeg",
         "detalles": [
-            { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
-            { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
-            { "texto": "AGENDA VISTA SEMANAL" }
+            { "texto": "Medidas 21 X 15" },
+            { "texto": "Hojas Resma Bookcel (color ahuesado)" }
         ]
     },
     {
@@ -30,9 +29,9 @@
         "descripcion": "Para escribir las mejores canciones",
         "imagen": "imagenes/cuaderno-11.jpeg",
         "detalles": [
-            { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
-            { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
-            { "texto": "AGENDA VISTA SEMANAL" }
+            { "texto": "Medidas 21 X 15" },
+            { "texto": "Hojas Resma (blancas)" },
+            { "texto": "Con frases de grandes músicos" }
         ]
     }
 ]

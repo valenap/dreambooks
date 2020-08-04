@@ -6,9 +6,9 @@
     "descripcion": "Redactá tus viajes",
     "imagen": "imagenes/cuaderno-8.png",
     "detalles": [
-      { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
-      { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
-      { "texto": "AGENDA VISTA SEMANAL" }
+      { "texto": "Medidas 21 X 15" },
+      { "texto": "Hojas Resma ECO (sin blanqueadores químicos)" },
+      { "texto": "La posición del mapa puede variar" }
     ]
   },
   {
@@ -18,9 +18,9 @@
     "descripcion": "¿Qué país te marcó más?",
     "imagen": "imagenes/cuaderno-4.jpg",
     "detalles": [
-      { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
-      { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
-      { "texto": "AGENDA VISTA SEMANAL" }
+      { "texto": "Medidas 20 X 20" },
+      { "texto": "Hojas Resma ECO (sin blanqueadores químicos)" },
+      { "texto": "Consultar por continentes" }
     ]
   },
   {
@@ -30,9 +30,9 @@
     "descripcion": "Reflejá tus mejores momentos",
     "imagen": "imagenes/cuaderno-5.jpeg",
     "detalles": [
-      { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
-      { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
-      { "texto": "AGENDA VISTA SEMANAL" }
+      { "texto": "Medidas 21 X 15" },
+      { "texto": "Hojas Resma ECO (sin blanqueadores químicos)" },
+      { "texto": "La posición del mapa puede variar" }
     ]
   },
   {
@@ -42,9 +42,9 @@
     "descripcion": "Señalá tu recorrido",
     "imagen": "imagenes/cuaderno-7.jpeg",
     "detalles": [
-      { "texto": "MEDIDAS 21 X 15. TAMAÑO A5" },
-      { "texto": "HOJA BOOKCEL. COLOR BLANCO" },
-      { "texto": "AGENDA VISTA SEMANAL" }
+      { "texto": "Medidas 21 X 15" },
+      { "texto": "Hojas Resma (blancas)" },
+      { "texto": "Próximamente..." }
     ]
   }
 ]
