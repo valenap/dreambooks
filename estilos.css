@@ -231,6 +231,7 @@ hr {
 }
 
 .card-category h2 {
+    font-size: 1.6em;
     transition: transform 0.3s ease-in-out 0s;
 }
 
