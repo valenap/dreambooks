@@ -30,7 +30,7 @@ header {
 
 body {
     margin: 0;
-    font-family: 'Gabriela', serif;
+    font-family: 'Josefin Sans';
     font-style: normal;
     background-color: #8EC5FC;
     background-image: linear-gradient(0deg, #8EC5FC 0%, #E0C3FC 32%, #ffffff 100%);
@@ -60,7 +60,9 @@ nav ul li {
 }
 
 .tabs-underlined .tab-underlined {
-    color: black;
+    font-family: 'Dancing Script';
+    font-size: 1.5em;
+    color: #555555;
     padding: 8px;
     margin: 8px 16px;
     cursor: pointer;
@@ -145,8 +147,8 @@ main {
 }
 
 h1 {
-    font-weight: 500;
-    font-size: 2.0em;
+    font-family: "Dancing Script";
+    font-size: 3.0em;
     line-height: 75px;
     display: flex;
     align-items: center;
@@ -173,7 +175,7 @@ h1 {
     position: relative;
     top: -300px;
     color: white;
-    font-family: Noto Sans;
+    font-family: 'Dancing Script';
     font-style: italic;
     font-weight: normal;
     font-size: 48px;
@@ -345,6 +347,8 @@ hr {
  }
 
 .btn-compra {
+    font-size: 1.5em;
+    font-weight: bold;
     border-style: solid;
     padding: 6px 12px 6px 12px;
     background: #00C9D8;
